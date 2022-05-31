@@ -30,7 +30,5 @@ modified: '2022-05-31T20:19:23.448Z'
 <p><b>Chaining</b>: Each index corresponds with a linked list, and if there is a collision(2 entries giving same hashcode) we insert into linked list at that index (Insertion: O(1)) </p>
 <p><b>Note:</b> Lookup can still be approximated towards O(1) as when we lookup a value we are not traversing one huge list but instead across n smaller lists.</p>
 
-
-
-
+<p>Helpful Video Link: https://www.youtube.com/watch?v=nvzVHwrrub0&ab_channel=CS50 </p>
 
