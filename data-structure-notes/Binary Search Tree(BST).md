@@ -24,7 +24,7 @@ modified: '2022-06-04T04:07:59.002Z'
   <li>For each node, value of all nodes in right subtree is greater</li>
 </ul>
 <p>The following depicts valid BST vs not valid BST: </p>
-![bst_valid_vs_not_valid](/imgs/valid_bst_vs_not_valid.png "bst")
+![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
 
 
 
