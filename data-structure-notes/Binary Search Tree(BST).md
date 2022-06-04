@@ -23,6 +23,10 @@ modified: '2022-06-04T04:07:59.002Z'
   <li>For each node, value of all nodes in left subtree is less or equal</li>
   <li>For each node, value of all nodes in right subtree is greater</li>
 </ul>
+<p>The following depicts valid BST vs not valid BST: </p>
+![bst_valid_vs_not_valid](imgs/valid_bst_vs_not_valid.png).
+
+
 
 ### Searching for value in BST
 <p> Searching BST for a value follows algorithm similar to binary search. We essentially compare value to root, if it's less than we search left subtree, if it's greater than, we search right subtree until we find equality or traverse entire tree. </p>
