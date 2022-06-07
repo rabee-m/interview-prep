@@ -10,12 +10,11 @@ Implement an algorithm to determine if a string has all unique characters.
 #Time: O(n)
 #Space: O(n), due to hash map
 def is_unique(s):
-    hash_map = {}
+    charAppears = defaultdict(bool)
     for c in s:
-        hash_map[c] += 1
-    for val in hash_map.values():
-        if val != 1:
+        if charAppears[c]:
             return False
+        charAppears[c] = True
     return True
 
 #Solution 2: Sorting the array
@@ -29,4 +28,4 @@ def is_unique2(s):
             return False
     return True
 
-print(is_unique2("toy"))
+print(is_unique("tooy"))
