@@ -1,5 +1,8 @@
 #AlgoExpert Easy Question: Find Three Largest Numbers
 def findThreeLargestNumbers(array):
+    """
+    Time: O(n), Space: O(1)
+    """
     maxNums = [None, None, None]
     for num in array:
         if maxNums[2] is None or num > maxNums[2]:
