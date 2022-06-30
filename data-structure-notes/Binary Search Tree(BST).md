@@ -1,10 +1,3 @@
----
-tags: [Data Structures]
-title: Binary Search Tree(BST)
-created: '2022-06-04T03:45:48.781Z'
-modified: '2022-06-04T04:07:59.002Z'
----
-
 # Binary Search Tree(BST)
 
 ## Overview

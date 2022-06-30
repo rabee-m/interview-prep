@@ -1,10 +1,3 @@
----
-tags: [Data Structures]
-title: Hash Tables
-created: '2022-05-31T19:43:28.682Z'
-modified: '2022-05-31T20:19:23.448Z'
----
-
 # Hash Tables
 
 ## Overview
