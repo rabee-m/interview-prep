@@ -14,7 +14,7 @@ class Node:
         self.visited = False
         
 
-def routeBetweenTwoNodes(n1, n2):
+def routeBetweenTwoNodesDFS(n1, n2):
     #start at n1 and perform a DFS
     stack = []
     stack.append(n1)
@@ -28,4 +28,18 @@ def routeBetweenTwoNodes(n1, n2):
                 stack.append(adjNode)
     
     return False
+
+def routeBetweenTwoNodesBFS(n1, n2):
+    queue = []
+    queue.append(n1)
+    
+    while (len(queue) != 0):
+        currNode = queue.pop(0)
+        if (currNode == n2): return True
+        for adjNode in currNode.adjNodes:
+            if (currNode.marked == False):
+                currNode.marked = True
+                queue.append(currNode)
+    return False
+        
             
