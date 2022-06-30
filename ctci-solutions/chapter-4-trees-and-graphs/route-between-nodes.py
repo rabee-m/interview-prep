@@ -24,7 +24,8 @@ def routeBetweenTwoNodes(n1, n2):
         currNode.visited = True
         if (n2 == currNode): return True
         for adjNode in currNode.adjNodes:
-            stack.append(adjNode)
+            if (not currNode.visited):
+                stack.append(adjNode)
     
     return False
             
