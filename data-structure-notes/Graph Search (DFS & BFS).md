@@ -9,18 +9,40 @@ There are two main graph algorithms
 <b>Overview:</b>
 - Visit a node a and then iterate through each of a's neighbors
 - When visiting a node b (neighbor of a), visit all of b's neighbors before going on to a's other neighbors
+- Iterativley implemented using a <b>stack</b>
 
 <b>Note:</b> Can implement pre-order, post-order, in-order traversal
 
 <b>Pseduocode:</b>
+
+Recursive:
 ```
-void search(Node root) {
+void recursiveDFS(Node root) {
     if (root == null) return;
     visit(root);
     root.visited = true;
     for each (Node n in root.adjacent) {
         if (n.visited == false) {
-            search(n)
+            recursiveDFS(n)
+        }
+    }
+}
+```
+
+Iterative:
+```
+void iterativeDFS(Node root) {
+    Stack stack = new Stack();
+    stack.append(root)
+
+    while(!stack.isEmpty()) {
+        Node r = stack.pop();
+        visit(r);
+        r.visited = true;
+        foreach(Node n in r.adjacent) {
+            if (!n.visited) {
+                stack.append(n)
+            }
         }
     }
 }
@@ -30,15 +52,15 @@ void search(Node root) {
 <p><b>Overview:</b></p>
 
 - node a visits each of a's neighbors before visiting any of their neighbors (searching level by level from a)
-- Iterativley implemented using a queue
+- Iterativley implemented using a <b>queue</b>
 
 
 <b>Note:</b> False assumption that BFS is recursive, it is iterative
 
 <b>Pseduocode:</b>
 ```
-void search(Node root) {
-    Queue = queue = new Queue();
+void iterativeBFS(Node root) {
+    Queue queue = new Queue();
     root.marked = true;
     queue.enqueue(root); //add to end of queue
 
