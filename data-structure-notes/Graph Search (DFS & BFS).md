@@ -47,7 +47,7 @@ void search(Node root) {
         visit(r);
         foreach (Node n in r.adjacent) {
             if (n.marked == false) {
-                n.marked = true;
+                n.marked = true; // to keep track of what nodes are in queue
                 queue.enqueue(n);
             }
         }
